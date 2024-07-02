@@ -17,7 +17,7 @@ html, body {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 0.6fr 6fr;
   grid-template-rows: 0.5fr 5fr;
 
 }
@@ -85,13 +85,6 @@ html, body {
   padding: 20px;
 }
 
-.search {
-  display: flex;
-}
-
-.search > img {
-  height: px;
-}
 
 .header .profile {
   display: flex; 
@@ -121,11 +114,25 @@ html, body {
   border: none;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search > img {
+  height: 30px;
+  flex-shrink: 0; 
+  margin-right: 10px;
+}
+
 .header input[type="search"] {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 50%;
+  border-radius: 20px;
+  flex-grow: 1;
+  width: 200%;
+  max-width: none;
 }
 
 .greeting {
